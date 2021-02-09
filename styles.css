@@ -1,0 +1,1021 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+/* Main settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+#page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    min-height: 100%;
+}
+
+.wrapper_body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 10px;
+    background: rgb(229, 229, 229);
+    background: -o-linear-gradient(top, rgba(229, 229, 229, 1) 7%, rgba(255, 255, 255, 1) 27%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, rgba(229, 229, 229, 1)), color-stop(27%, rgba(255, 255, 255, 1)));
+    background: linear-gradient(180deg, rgba(229, 229, 229, 1) 7%, rgba(255, 255, 255, 1) 27%);
+    min-height: 100%;
+
+}
+
+.layout {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+/* Header */
+
+.header {
+    background: rgb(4, 4, 4);
+    background: -o-linear-gradient(bottom, rgba(4, 4, 4, 1) 28%, rgba(39, 40, 40, 1) 75%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(28%, rgba(4, 4, 4, 1)), color-stop(75%, rgba(39, 40, 40, 1)));
+    background: linear-gradient(0deg, rgba(4, 4, 4, 1) 28%, rgba(39, 40, 40, 1) 75%);
+    height: 140px;
+    padding-top: 5px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    -o-border-image:
+        -o-linear-gradient(top, rgba(79, 9, 9, 1) 0%, rgba(217, 12, 12, 1) 55%) 0 0 100% 0/0 0 5px 0;
+    border-image:
+        -webkit-gradient(linear, left top, left bottom, from(rgba(79, 9, 9, 1)), color-stop(55%, rgba(217, 12, 12, 1))) 0 0 100% 0/0 0 5px 0;
+    border-image:
+        linear-gradient(180deg, rgba(79, 9, 9, 1) 0%, rgba(217, 12, 12, 1) 55%) 0 0 100% 0/0 0 5px 0;
+}
+
+.header_top_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.header_top_section .welcome_id {
+    color: #fff;
+    margin: 10px 5px 0px 0px;
+}
+
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 60%;
+    margin-top: 5px;
+}
+
+.header_top_section .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px 0 10px;
+    background: -o-linear-gradient(top, rgba(14, 15, 15, 1) 0%, rgba(171, 158, 158, 1) 87%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 15, 15, 1)), color-stop(87%, rgba(171, 158, 158, 1)));
+    background: linear-gradient(180deg, rgba(14, 15, 15, 1) 0%, rgba(171, 158, 158, 1) 87%);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .9rem;
+    border-radius: 4px;
+    -webkit-transition: color 0.3s ease-in 0.2s, background 0.3s ease-out 0.2s;
+    -o-transition: color 0.3s ease-in 0.2s, background 0.3s ease-out 0.2s;
+    transition: color 0.3s ease-in 0.2s, background 0.3s ease-out 0.2s;
+
+}
+
+.header_top_section .sign_up_mobile,
+.header_top_section .sign_in_mobile {
+    display: none;
+}
+
+.header_top_section .sign_up {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+}
+
+.header_top_section .sign_in {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
+    margin-left: 10px;
+}
+
+.header_top_section .sign_up i,
+.header_top_section .sign_in i {
+    width: 10px;
+    margin-right: 18px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.header_top_section .sign_up i {
+    margin-right: 8px;
+}
+
+.header_top_section .btn:hover {
+    color: red;
+    background: #000000;
+}
+
+/* Logo */
+
+.main_logo {
+    position: relative;
+    width: 30%;
+    left: 0;
+    top: 80px;
+}
+
+.img_logo {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Nav Bar */
+.main_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.shopping_bag,
+.sub_menu {
+    background-color: #0a0900;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wall.png");
+
+}
+
+.shopping_bag {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 30%;
+    padding-top: 2px;
+}
+
+.shopping_bag_logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.shopping_bag_logo i {
+    width: 100%;
+    color: beige;
+    font-size: 2.5rem;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.shopping_bag .shopping-bag_word {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #f70808;
+}
+
+/* Nav Bar Upper Part */
+
+.sub_menu .menu_1_burger {
+    display: none;
+}
+
+.sub_menu .menu_layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 12px;
+    width: 98%;
+}
+
+
+.menu_1 .menu_layout {
+    margin-top: 7px;
+    background-color: #0f0d0b;
+    background-image: url("https://www.transparenttextures.com/patterns/grey-washed-wall.png");
+    color: #fff;
+    height: 40px;
+}
+
+.menu_1 .home_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 5%;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.menu_1 .upper_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-weight: 600;
+    list-style: none;
+    height: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu_1 .upper_menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.menu_1 .upper_menu li:hover,
+.menu_1 .home_icon:hover {
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 0.8;
+    color: #000000;
+}
+
+/* Nav Bar Bottom Part */
+
+.menu_2 .bottom_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    color: rgb(138, 133, 133);
+    margin-right: 3%;
+    height: 35px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu_2 .bottom_menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    border-right: 1px dotted #666666;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: auto;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+
+.menu_2 .bottom_menu li a:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu_layout .input_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    padding: 5px 0px 5px 0px;
+}
+
+.input_box input {
+    border: none;
+    padding: 4px;
+    width: 17vw;
+    -webkit-box-flex: 2;
+    -ms-flex: 2 1 70%;
+    flex: 2 1 70%;
+}
+
+.input_box button {
+    padding: 4px;
+    background-color: #fff;
+    border: none;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 2 30%;
+    flex: 1 2 30%;
+}
+
+.input_box button:hover {
+    cursor: pointer;
+}
+
+/* Main Part */
+
+.wrapper_body .layout {
+    margin-top: 70px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.social_layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 100px;
+    padding: 10px 10px;
+    background-color: #0f0d0b;
+    background-image: url("https://www.transparenttextures.com/patterns/grey-washed-wall.png");
+}
+
+.social_missha .social_missha_logo,
+.social_missha .social_missha_cargo {
+    display: inline-block;
+    width: 80px;
+
+}
+
+.social_missha .social_missha_logo_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 3 15%;
+            flex: 0 3 15%;
+    margin-right: 10px;
+}
+
+.social_missha .social_missha_logo {
+    width: 110px;
+    margin-right: 0px;
+}
+
+.social_missha .img_cargo {
+    background-color: #0a0900;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wall.png");
+    -webkit-box-flex: 0;
+        -ms-flex: 0 2 25%;
+            flex: 0 2 25%;
+    padding: 10px;
+}
+
+.social_media_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 0 60%;
+            flex: 2 0 60%;
+    margin-right: 10px;
+}
+
+
+.social_media_links .upper_table ul,
+.social_media_links .bottom_table ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.social_media_links .upper_table ul {
+    margin-bottom: 5px;
+}
+
+.social_media_links .upper_table li,
+.social_media_links .bottom_table li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 33%;
+    background-color: #0a0900;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wall.png");
+    padding: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.social_media_links .upper_table li a,
+.social_media_links .bottom_table li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+
+}
+
+.social_media_links .upper_table li i,
+.social_media_links .bottom_table li i {
+    color: #fff;
+    font-size: 1.3rem;
+    width: 20%;
+}
+
+
+/* Footer */
+
+footer {
+
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    border-top: 3px solid rgb(160, 20, 20);
+
+}
+
+footer .upper_part {
+    max-height: 30%;
+    padding-bottom: 20px;
+}
+
+footer .footer_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 15px;
+}
+
+.footer_info .footer_info_right_part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 1px dotted #666666;
+    padding-right: 5px;
+}
+
+footer .footer_tables {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-bottom: 1px dotted #666666;
+}
+
+footer .table {
+    margin-bottom: 0;
+}
+
+footer .table_title h3 {
+    font-size: 15px;
+    padding-left: 8px;
+
+}
+
+footer .table ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+footer .table li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+footer .table a {
+    text-decoration: none;
+    color: rgb(138, 133, 133);
+}
+
+footer .table a:hover {
+    color: rgb(160, 20, 20);
+}
+
+footer .footer_social_media_account {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 60%;
+    flex: 0 1 60%;
+}
+
+
+footer .footer_address {
+    font-size: 12px;
+}
+
+footer .footer_address h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+footer .footer_address p {
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+
+footer .footer_address p span {
+    font-weight: 600;
+}
+
+footer .bottom_part {
+    max-height: 80px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer .bottom_part .copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(138, 133, 133);
+    margin-bottom: 0px;
+}
+
+footer .bottom_part .missha_site_ref {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+footer .bottom_part .missha_site_ref a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+footer .bottom_part a:hover {
+    color: rgb(160, 20, 20);
+}
+
+/* Media queries */
+
+
+@media (min-width:1550px) {
+
+    .header_top_section .welcome_id {
+        margin-bottom: 1%;
+    }
+
+    .main_logo {
+        width: 35vh;
+        top: 70px;
+    }
+
+    .main_menu {
+        top: 1.6rem;
+    }
+
+    .sub_menu .bottom_menu {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .wrapper_body .layout {
+        margin-top: 4.7rem;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .layout {
+        width: 85%;
+    }
+}
+
+@media (max-width:768px) {
+    .header_top_section {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .header_top_section .btn {
+        font-size: 12px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .header_top_section .sign_in {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 150px;
+                flex: 0 0 150px;
+    }
+
+    .layout {
+        width: 100%;
+    }
+
+    .main_logo {
+        left: 10px;
+    }
+
+    .main_menu {
+        top: 2.9rem;
+    }
+
+    .menu_1 .menu_layout {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .sub_menu .menu_1_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .sub_menu .menu_1_burger span {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .sub_menu .menu_1_burger::before,
+    .sub_menu .menu_1_burger::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .sub_menu .menu_1_burger::before {
+        top: 0;
+    }
+
+    .sub_menu .menu_1_burger::after {
+        bottom: 0;
+    }
+
+    .sub_menu .menu_1_burger.active span {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+
+    .sub_menu .menu_1_burger.active::before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .sub_menu .menu_1_burger.active::after {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .menu_1 .home_icon {
+        display: none;
+    }
+
+    .sub_menu .menu_layout {
+        width: 100%;
+    }
+
+    .menu_1 .upper_menu {
+        display: none;
+    }
+
+
+    .menu_1 .visible {
+        display: block;
+        position: absolute;
+        top: 5.3rem;
+        background-color: #e8e8e8;
+        background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+        width: 100%;
+        height: 75vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 1.3rem;
+        color: rgb(138, 133, 133);
+        overflow: auto;
+        z-index: 10;
+
+    }
+
+    .menu_1 .upper_menu li {
+        width: 100%;
+        height: 13vh;
+    }
+
+
+    .menu_2 .bottom_menu {
+        display: none;
+    }
+
+    .menu_2 .input_box {
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+
+    .menu_2 .input_box input {
+        -webkit-box-flex: 2;
+        -ms-flex: 2 1 85%;
+        flex: 2 1 85%;
+    }
+
+    .menu_2 .input_box button {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 2 15%;
+        flex: 1 2 15%;
+    }
+
+    .shopping_bag_logo i {
+        font-size: 1.5rem;
+    }
+
+    .shopping_bag .shopping-bag_word {
+        font-size: 0.8rem;
+    }
+
+    .wrapper_body .layout {
+        margin-top: 67px;
+    }
+
+    .social_layout {
+        padding: 5px;
+    }
+
+
+    .social_media_links {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    .social_media_links .upper_table li a,
+    .social_media_links .bottom_table li a {
+        font-size: 11px;
+    }
+
+    .social_media_links .upper_table li i,
+    .social_media_links .bottom_table li i {
+        font-size: 1.1rem;
+    }
+
+
+    .social_missha .img_cargo {
+        display: none;
+    }
+
+    footer .upper_part {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:438px) {
+    .header_top_section .welcome_id {
+        font-size: 14px;
+    }
+
+
+    .header_top_section .sign_in,
+    .header_top_section .sign_up {
+        display: none;
+    }
+
+    .header_top_section .sign_in_mobile,
+    .header_top_section .sign_up_mobile {
+        display: block;
+        font-size: 1.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin-left: 15px;
+    }
+
+    .header_top_section .sign_up {
+        margin-top: 10px;
+    }
+
+
+
+    .main_logo {
+        top: 55px;
+        width: 35vw;
+    }
+
+    .main_menu {
+        top: 1.5rem;
+    }
+
+    .shopping_bag {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .shopping_bag_logo {
+        width: 15px;
+    }
+
+    .shopping_bag .shopping-bag_word {
+        display: none;
+    }
+
+    .wrapper_body .layout {
+        margin-top: 65px;
+    }
+
+    .social_layout {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+
+    .social_missha .social_missha_logo_wrapper {
+        width: 10%;
+    }
+
+    .social_missha .social_missha_logo {
+        width: 60px;
+    }
+
+    .social_media_links .upper_table li i,
+    .social_media_links .bottom_table li i {
+        font-size: 0.9rem;
+    }
+
+    footer .table li {
+        font-size: 10%;
+    }
+
+    footer .footer_address,
+    footer .bottom_part {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:287px) {
+    .header_top_section {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .header_top_section .welcome_id {
+        display: none;
+    }
+
+    .header_top_section .sign_in {
+        margin-left: 10px;
+    }
+
+    footer .table li {
+        font-size: 11px;
+    }
+
+    footer .footer_address,
+    footer .bottom_part {
+        font-size: 9px;
+    }
+
+}
